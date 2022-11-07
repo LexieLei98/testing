@@ -1,6 +1,39 @@
 const sumDigits = require('../katas/sum-digits');
 
 // Tests for sumDigits
+describe("tests for sumDigits",() => {
+  test.skip ("returns the input number when passed a single digit number",() => {
+    //arrange 
+    const num1 = 1;
+    const expectedOutput = 1;
+    //act
+    const output = sumDigits(1);
+    //assert
+    expect(output).toBe(expectedOutput)
+  })
+
+  test.skip("returns the sum when passed a multi digit number", () => {
+    //arrange
+    const num = 99;
+    const expectedOutput = 18;
+    //act
+    const output = sumDigits(99);
+    //assert
+    expect(output).toBe(expectedOutput)
+
+  })
+
+  test.skip("returns the sum when passed a non-numerical number", () => {
+    //arrange
+    const num = 10.5;
+    const expectedOutput = 6;
+    //act
+    const output = sumDigits(10.5);
+    //assert
+    expect(output).toBe(expectedOutput);
+  })
+})
+
 
 /*
   TEST 1 - sumDigits returns the input number when passed a single digit number
