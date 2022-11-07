@@ -1,0 +1,23 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "Welcome to your first day of Pairing Katas, and your first sprint!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexieLei98/testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LexieLei98/testing/issues"
+  },
+  "homepage": "https://github.com/LexieLei98/testing#readme",
+  "dependencies": {
+    "jest": "^29.2.2"
+  }
+}

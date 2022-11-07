@@ -7,6 +7,29 @@
     --> 6
 */
 
-function sumDigits() {}
+function sumDigits(num) {
+  if (num.isIntegar()){
+      if(num < 10){
+    return num;
+  } else {
+    return String(num)
+    .split('')
+    .reduce((acc, curr) => {
+      return acc + Number(curr);
+    }, 0);}
+
+  } 
+  
+  else {
+    return String(num)
+    .split('.').split('')
+    .reduce(acc, curr) => {
+      return acc + Number(curr);} 
+}
+} 
+
+
+;
+
 
 module.exports = sumDigits;
